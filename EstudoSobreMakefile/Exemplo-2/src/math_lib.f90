@@ -1,15 +1,20 @@
 MODULE math_lib
 !
-! Objetivo: Resolução da questão 15 da lista 1
-! de programação em FORTRAN
-!
+! math_lib.f90 (Fortran)
+! 
+! Objetivo: Biblioteca de definição de constantes físicas.
+! 
 ! Versão 1.0
-!
-! Programador: Rodolfo A. C. Neves 06/05/2018
-
+! 
+! Site: http://www.dirackslounge.online
+! 
+! Programador: Rodolfo A. C. Neves (Dirack) 09/06/2019
+! 
+! Email: rodolfo_profissional@hotmail.com
+! 
+! Licença: Software de uso livre e código aberto.
 IMPLICIT NONE
 
-! DEfinição de constantes físicas
 REAL, PARAMETER:: K_=9E9 ! Constante de Coulomb, N·m^2/C^2 no S.I.
 REAL, PARAMETER:: GU_=6.674184E-11 ! Constante gravitacional universal, Nm^2/kg^2 no S.I.
 REAL, PARAMETER:: g_=9.81 ! Gravidade ao nível do Equador, m/s^2 no S.I. 

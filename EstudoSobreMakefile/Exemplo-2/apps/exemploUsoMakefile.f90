@@ -1,4 +1,20 @@
 PROGRAM exemploUsoMakefile
+!
+! exemploUsoMakefile.f90 (Fortran)
+! 
+! Objetivo: Exemplo de uso de arquivos Makefile com máscaras e variáveis nas diretivas
+! de compilação.
+! 
+! Versão 1.0
+! 
+! Site: http://www.dirackslounge.online
+! 
+! Programador: Rodolfo A. C. Neves (Dirack) 09/06/2019
+! 
+! Email: rodolfo_profissional@hotmail.com
+! 
+! Licença: Software de uso livre e código aberto.
+
 USE math_lib
 USE input_lib
 USE moduloExemplo

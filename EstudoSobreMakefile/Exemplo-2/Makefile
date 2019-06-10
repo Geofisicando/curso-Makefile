@@ -33,8 +33,8 @@ libed:	input_lib.o \
 %.x:	$(APPS)/%.f90
 	gfortran $< $(OBJ)/*.o -I $(MOD) -o $(BIN)/$@
 
-run:	$(BIN)/exemploUsoMakefile.x
-	$<
+run:	exemploUsoMakefile.x
+	$(BIN)/$<
 
 help:
 	@echo "Makefile do Exemplo-2"

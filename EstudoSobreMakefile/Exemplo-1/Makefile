@@ -14,7 +14,7 @@
 # Licença: Software de uso livre e código aberto.
 
 all:	
-	@echo "Makefile do Exemplo-1"
+	@echo "compilação do Exemplo-1 do estudo sobre arquivos Makefile"
 
 input_lib.o: 
 	gfortran -c ./src/input_lib.f90 -J ./mod/ -o ./obj/input_lib.o
@@ -25,11 +25,11 @@ math_lib.o:
 moduloExemplo.o:
 	gfortran -c ./src/moduloExemplo.f90 -J ./mod/ -o ./obj/moduloExemplo.o
 
-exemploUsoMakefile.o:	./obj/input_lib.o ./obj/math_lib.o ./obj/moduloExemplo.o
+exemploUsoMakefile.o:	./apps/exemploUsoMakefile.f90 input_lib.o math_lib.o moduloExemplo.o
 	gfortran -c ./apps/exemploUsoMakefile.f90 -I ./mod/ -o ./obj/exemploUsoMakefile.o
 
-exemploUsoMakefile.x:	./obj/moduloExemplo.o
-	gfortran ./obj/*.o -o ./bin/exemploUsoMakefile.x
+exemploUsoMakefile.x:	exemploUsoMakefile.o
+	gfortran ./obj/*.o -I ./mod/ -o ./bin/exemploUsoMakefile.x
 
 run:	exemploUsoMakefile.x
 	./bin/exemploUsoMakefile.x

@@ -1,7 +1,19 @@
-# Exemplo de compilação com Makefile de Arquivo com módulos
+# Makefile
+#
+# Objetivo: Exemplificar a compilação de arquivo com módulos utilizando Makefile.
+# 
+# Site: http://www.dirackslouge.online
+#
+# Versão 2.0
+#
+# Programador: Rodolfo A. C. Neves 13/01/2019
+# 
+# Email (manutenção): rodolfo_profissional@hotmail.com
+# 
+# Licença: Software de uso livre e código aberto.
 
 all:
-	@echo "Exemplo compilação com Makefile de arquivo com módulos"
+	@echo "Exemplo compilação de arquivo com módulos utilizando Makefile"
 
 run:	teste.x
 	./teste.x

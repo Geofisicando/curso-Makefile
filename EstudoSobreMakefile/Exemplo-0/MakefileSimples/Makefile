@@ -14,18 +14,7 @@
 
 # Exemplo Makefile compilação simples
 
-all:
-	@echo "Exemplo compilação simples de arquivos com Makefile"
+teste.x:	teste.f90
+	gfortran teste.f90 -o teste.x
 
-run:	teste.x
-	./teste.x
 
-teste.x:	teste.o
-	gfortran teste.o -o teste.x
-
-teste.o:	teste.f90
-	gfortran -c teste.f90
-
-clean:
-	rm *.o
-	rm teste.x

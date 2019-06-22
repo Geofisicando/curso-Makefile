@@ -17,3 +17,8 @@ programa.x:	programa.f90 modulo_lib.o
 
 modulo_lib.o:	modulo_lib.f90
 	gfortran -c modulo_lib.f90
+
+clean:
+	rm *.o
+	rm *.mod
+	

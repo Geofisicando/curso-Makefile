@@ -1,6 +1,6 @@
-PROGRAM teste
+PROGRAM programa
 !
-! teste.f90 (Fortran)
+! programa.f90 (Fortran)
 ! 
 ! Objetivo: Exemplo simples de compilação de programa com dependências
 ! utilizando arquivos Makefile.
@@ -15,16 +15,15 @@ PROGRAM teste
 ! 
 ! Licença: Software de uso livre e código aberto.
 
-USE parametros_lib
-USE funcoes_lib
+USE modulo_lib
 IMPLICIT NONE
 
 REAL:: somaAmaisB
+REAL:: a=2, b=1
 
 ! Some os parâmetros a e b definidos em parametros_lib
 somaAmaisB = soma(a,b)
 
 WRITE(*,*) "A soma dos parâmetros a e b é: ", somaAmaisB
-WRITE(*,*) "mensagem qualquer!"
 
 END PROGRAM

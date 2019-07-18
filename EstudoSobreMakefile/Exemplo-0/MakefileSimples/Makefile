@@ -14,7 +14,10 @@
 
 # Exemplo Makefile compilação simples
 
+all:	teste.x run
+
 teste.x:	teste.f90
 	gfortran teste.f90 -o teste.x
 
-
+run:	teste.x
+	./teste.x

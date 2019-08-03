@@ -20,6 +20,7 @@ CC = gfortran
 
 $(BIN)/programa.x:	$(SRC)/programa.f90 $(OBJ)/modulo_lib.o
 	$(CC) $(OBJ)/modulo_lib.o $< -I $(MOD) -o $@
+# gfortran $(OBJ)/modulo_lib.o $(SRC)/programa.f90 -I $(MOD) -o $(BIN)/programa.x
 
 # A regra abaixo traduzida
 #./obj/modulo_lib.o:	./src/modulo_lib.f90

@@ -12,9 +12,9 @@
 # 
 # Licença: Software de uso livre e código aberto.
 
-SRC = ./src
+SRC = ./fontes
 OBJ = ./obj
-BIN = ./bin
+BIN = ./principal
 MOD = ./mod
 CC = gfortran
 
@@ -27,4 +27,5 @@ $(OBJ)/modulo_lib.o:	$(SRC)/modulo_lib.f90
 clean:
 	rm $(OBJ)/*.o
 	rm $(MOD)/*.mod
+	rm $(BIN)/*.x
 	

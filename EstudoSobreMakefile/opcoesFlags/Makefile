@@ -21,4 +21,5 @@
 clean:
 	rm ./obj/*.o
 	rm ./mod/*.mod
+	rm ./bin/*.x
 	

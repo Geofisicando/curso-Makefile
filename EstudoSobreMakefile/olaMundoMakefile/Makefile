@@ -14,4 +14,4 @@
 
 
 all:
-	@echo "Olá mundo, Makefile! :)"
+	echo "Olá mundo, Makefile! :)"

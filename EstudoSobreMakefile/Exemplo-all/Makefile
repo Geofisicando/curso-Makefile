@@ -16,7 +16,7 @@
 # 
 # Licença: Software de uso livre e código aberto.
 
-all:	mensagem1
+all:	mensagem1 mensagem2
 	@echo "Olá mundo Makefile!"
 
 mensagem1:
